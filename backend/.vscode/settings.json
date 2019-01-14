@@ -2,5 +2,13 @@
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#f16821",
     "titleBar.inactiveBackground": "#cd4545"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "dist": true
   }
 }

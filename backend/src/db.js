@@ -1,4 +1,3 @@
-require('dotenv').config({ path: 'variables.env' })
 import { Prisma } from 'prisma-binding'
 
 const db = new Prisma({

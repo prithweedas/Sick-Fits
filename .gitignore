@@ -8,3 +8,4 @@ layout.md
 *.env
 nodemon.json
 backend/dist
+nodemon.json

@@ -1,5 +1,4 @@
 import createServer from './createServer'
-import db from './db'
 
 const server = createServer()
 

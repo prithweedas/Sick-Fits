@@ -5,11 +5,9 @@
   "scripts": {
     "build": "babel src -d dist --copy-files",
     "start": "node dist/index.js",
-    "debug": "nodemon -e js,graphql -x babel-node --inspect src/index.js",
+    "dev": "nodemon -e js,graphql -x babel-node --inspect src/index.js",
     "test": "jest",
-    "deploy": "prisma deploy --env-file variables.env",
-    "play": "graphql playground --dotenv variables.env",
-    "dev": "npm-run-all --parallel play debug"
+    "deploy": "prisma deploy --env-file variables.env"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",

@@ -17,6 +17,4 @@ const createServer = () => {
   })
 }
 
-console.log(process.env.APP_SECRET)
-
 export default createServer

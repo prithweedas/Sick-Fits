@@ -48,7 +48,7 @@ class Item extends React.Component {
             <a>Edit ✏️</a>
           </Link>
           <button>Add to Cart</button>
-          <DeleteItem>Delete this Item</DeleteItem>
+          <DeleteItem id={item.id}>Delete this Item</DeleteItem>
         </div>
       </ItemStyles>
     )

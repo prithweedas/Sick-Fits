@@ -5,6 +5,7 @@ import createServer from './createServer'
 const server = createServer()
 
 // TODO: express middleware for parsing cookies
+
 // TODO: express middleware to populate current user
 
 // adding graphql playground

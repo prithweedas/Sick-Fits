@@ -4,7 +4,7 @@ const Mutations = {
 
     const item = await ctx.db.mutation.createItem(
       {
-        data: { ...args }
+        data: { ...args.data }
       },
       info
     )

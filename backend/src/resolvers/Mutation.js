@@ -10,6 +10,15 @@ const Mutations = {
     )
     return item
   },
+  deleteItem: async (parent, args, ctx, info) => {
+    const where = { id: args.id }
+    // find the Item
+    const item = await ctx.db.query.item({ where }, `{ id title }`)
+    console.log(item)
+    // TODO: check permissions
+    // delete the Item
+    return ctx.db.mutation.deleteItem({ where }, info)
+  },
   updateItem: async (parent, { data }, ctx, info) => {
     // get the arguments
     const { id, ...updates } = data

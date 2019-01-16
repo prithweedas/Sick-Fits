@@ -14,7 +14,6 @@ const Mutations = {
     const where = { id: args.id }
     // find the Item
     const item = await ctx.db.query.item({ where }, `{ id title }`)
-    console.log(item)
     // TODO: check permissions
     // delete the Item
     return ctx.db.mutation.deleteItem({ where }, info)

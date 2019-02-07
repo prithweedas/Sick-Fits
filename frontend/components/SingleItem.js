@@ -44,7 +44,6 @@ class SingleItem extends React.Component {
           if (error) return <Error error={error} />
           if (loading) return <p>Loading...</p>
           if (!data.item) return <p>No Item found!</p>
-          console.log(data)
           const item = data.item
           return (
             <SingleItemStyles>
